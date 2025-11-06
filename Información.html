@@ -89,7 +89,35 @@
         </table>
 
     </article>
+    <section>
+        <h2>Para obtener mas información </h2>
+            <form>
+                <fieldset>
+                    <legend> Formulario para obtener información</legend>
+                    <label for="email">Correo:</label>
+                    <input type="email" id="email" name="email_usuario"  required>
+                    <br>
 
+                    <label for="date">Fecha:</label>
+                    <input type="date" name="Fecha" id="date">
+                    <br>
+
+                    <label for="range">Interes por la Champions: (0-10)</label>
+                    <input type="range" name="nivel" min="0" max="10" id="range">
+                    <br>
+
+                    <label for="goles">¿Cuántos goles crees que marcará tu equipo?(Entre 0-25)</label>
+                    <input type="number" id="goles" name="goles" min="0" max="25">
+                    <br>
+
+                    <label for="cp">Código Postal:Numeros del 0-9 e intoduzca 5 numeros</label>
+                    <input type="text" id="cp" name="codigo_postal"
+                    pattern="^[0-9]{5}">
+
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
 </main>
 
 </body>
