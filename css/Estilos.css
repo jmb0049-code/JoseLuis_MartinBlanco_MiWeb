@@ -65,13 +65,10 @@ aside{
 .contenido-clubes {
     display: block;
     padding: 20px;
-    background-color: white;
 }
 
 
 .contenido-clubes article {
-    background-color: white;
-    color: black;
     padding: 0;
     border: none;
 }
@@ -79,8 +76,6 @@ aside{
 
 .contenido-clubes aside {
     margin-top: 20px;
-    background-color: white;
-    color: black;
     padding: 0;
     border: none;
 }
