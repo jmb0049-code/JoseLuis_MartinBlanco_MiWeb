@@ -1,9 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+header , nav , main,article, aside , footer{
+    margin: 10px;
+    padding: 15px;
+    border:2px solid transparent;
+}
+header{
+    background-image: url("../images/ucl_branding.webp");
+
+    background-repeat: no-repeat; /*No repite la imagen*/
+    background-size: cover; /*Para cubrir el fondo completo*/
+    background-position: center; /*Para centrar la imagen*/
+    padding: 22px;
+}
 .titulo{
     text-align: center;
     font-size: 45px;
     margin:20px 0px;
     font-family:Arial ;
     font-weight: bold;
+    color:white;
+
 
 }
 
