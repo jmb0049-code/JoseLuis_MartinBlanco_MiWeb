@@ -80,5 +80,28 @@ aside{
     border: none;
 }
 
+.tabla-horarios {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #F2D28B;
+    margin-top: 20px;
+}
+
+.tabla-horarios th,
+.tabla-horarios td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tabla-horarios thead th {
+    background-color: #5A8FF0;
+    font-weight: bold;
+}
+
+
+
+
 
 
