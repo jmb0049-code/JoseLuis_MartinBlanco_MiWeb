@@ -1,3 +1,10 @@
+@font-face { /*Para añadir una fuente externa*/
+    font-family: "Buda", serif;
+    src: url("../fuentes/Buda-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -6,7 +13,7 @@ header , nav , main,article, aside , footer{
     padding: 15px;
     border:2px solid transparent;
 }
-header{
+header {
     background-image: url("../images/ucl_branding.webp");
 
     background-repeat: no-repeat; /*No repite la imagen*/
@@ -14,17 +21,21 @@ header{
     background-position: center; /*Para centrar la imagen*/
     padding: 22px;
 }
-.titulo{
+
+.titulo{/*El titulo con fuente externa BUDA y sombra*/
     text-align: center;
     font-size: 45px;
     margin:20px 0px;
-    font-family:Arial ;
+    font-family:"Buda",Arial,serif ;
     font-weight: bold;
     color:white;
-
-
+    text-shadow: 2px 2px 8px #000;/*Para dar sombra al texto*/
 }
-
+.titulo::before{
+    content: "⚽";
+    font-size: 45px;
+    color:gold;
+}
 
 .menu {
     width: 100%;
@@ -43,7 +54,14 @@ header{
 .menu a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bold; /*negrita*/
+    transition: color 0.3s, transform 0.3s; /* Cuando el raton pase por lo alto de cambiara de color en 0.3 seg */
+}
+
+.menu a:hover {
+    color: #FFD700;          /* cambio de color */
+    text-decoration: underline; /* subraya el enlace */
+    transform: scale(1.1);      /* aumenta el tamaño del enlance */
 }
 
 .contenido {
@@ -56,11 +74,14 @@ article{
     background-color: #5A8FF0;
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 2px 2px 8px #000;/*Agrega sombra al article*/
 }
 aside{
     background-color:#F2D28B;
+   opacity: 0.8;/*Para dar un poco de transparencia al aside*/
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 8px;/*Rodea las esquinas del aside*/
+
 }
 .contenido-clubes {
     display: block;
@@ -99,9 +120,9 @@ aside{
     background-color: #5A8FF0;
     font-weight: bold;
 }
-
-
-
-
-
-
+.tabla-horarios tbody tr:nth-child(even) {/*selecciona las filas pares */
+    background-color: #FFE8B0;
+}
+.tabla-horarios tbody tr:nth-child(odd) {/*selecciona filas inpares*/
+    background-color: #FFF4D0;
+}
