@@ -4,7 +4,13 @@
     font-weight: 300;
     font-style: normal;
 }
-
+body{
+    background-color: #0A1F44;
+    font-family: 'Arial', serif;
+    margin: 0;
+    padding: 0;
+    color:#FFFFFF;/*texto en blanco*/
+}
 *{
     box-sizing: border-box;
 }
@@ -22,24 +28,25 @@ header {
     padding: 22px;
 }
 
+
 .titulo{/*El titulo con fuente externa BUDA y sombra*/
     text-align: center;
     font-size: 45px;
     margin:20px 0px;
     font-family:"Buda",Arial,serif ;
     font-weight: bold;
-    color:white;
+    color:#FFD700;
     text-shadow: 2px 2px 8px #000;/*Para dar sombra al texto*/
 }
 .titulo::before{
     content: "⚽";
     font-size: 45px;
-    color:gold;
+    color:#FFD700;
 }
 
 .menu {
     width: 100%;
-    background-color: #333;
+    background-color: #1E3A8A;
     padding: 15px;
 }
 .menu ul {
@@ -52,14 +59,14 @@ header {
 }
 
 .menu a {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: bold; /*negrita*/
     transition: color 0.3s, transform 0.3s; /* Cuando el raton pase por lo alto de cambiara de color en 0.3 seg */
 }
 
 .menu a:hover {
-    color: #FFD700;          /* cambio de color */
+    color: #FFD700;          /* cambio de color al pasar por lo alto*/
     text-decoration: underline; /* subraya el enlace */
     transform: scale(1.1);      /* aumenta el tamaño del enlance */
 }
@@ -70,18 +77,27 @@ header {
     gap: 20px;
     padding: 20px;
 }
-article{
-    background-color: #5A8FF0;
+.contenido article{
+    background-color: #1E3A8A;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 2px 2px 8px #000;/*Agrega sombra al article*/
 }
-aside{
-    background-color:#F2D28B;
+.contenido aside{
+    background-color:#FFD700;
    opacity: 0.8;/*Para dar un poco de transparencia al aside*/
     padding: 20px;
     border-radius: 8px;/*Rodea las esquinas del aside*/
+    color: #000000;
 
+}
+.contenido aside ul{
+    justify-content: center;
+
+}
+.contenido aside h3{
+    justify-content: center;
+    text-align: center;
 }
 .contenido-clubes {
     display: block;
@@ -89,40 +105,40 @@ aside{
 }
 
 
-.contenido-clubes article {
+.contenido-clubes  {
     padding: 0;
     border: none;
 }
 
 
-.contenido-clubes aside {
+.contenido-clubes  {
     margin-top: 20px;
     padding: 0;
     border: none;
+}
+.contenido-clubes caption{
+    color: #FFFFFF;
 }
 
 .tabla-horarios {
     width: 100%;
+    padding: 20px;
     border-collapse: collapse;
-    background-color: #F2D28B;
+    background-color: #fff;
     margin-top: 20px;
+    color: #000000;
 }
 
 .tabla-horarios th,
 .tabla-horarios td {
-    border: 1px solid black;
+    border: 1px solid #1E3A8A;
     padding: 8px;
     text-align: center;
     vertical-align: middle;
 }
-
-.tabla-horarios thead th {
-    background-color: #5A8FF0;
-    font-weight: bold;
-}
 .tabla-horarios tbody tr:nth-child(even) {/*selecciona las filas pares */
-    background-color: #FFE8B0;
+    background-color: #e6f0ff;
 }
 .tabla-horarios tbody tr:nth-child(odd) {/*selecciona filas inpares*/
-    background-color: #FFF4D0;
+    background-color: #ffffff;
 }
